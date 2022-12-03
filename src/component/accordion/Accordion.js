@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import { AccordionData } from "./AccordionData";
 import accor from "./accorStyle.scss";
+import Title from "../TITLE/Title";
 
 function Accordion(props) {
   const [state, setState] = useState(0);
   const answer = useRef();
-  console.log(answer);
   function plus(target) {
     setState(1);
 
@@ -33,7 +33,7 @@ function Accordion(props) {
     <>
       <div className="accor">
         <div className="container">
-          <h1 className={accor}>{props.title}</h1>
+          <Title title={props.title} color="black" size="44" />
           <div className="accor__card">
             <div className="accor__quest">{props.question}</div>
             <button onClick={click} className="accor__arrow">
@@ -45,7 +45,6 @@ function Accordion(props) {
               </div>
             </div>
           </div>
-          {console.log("render")}
         </div>
       </div>
     </>
@@ -56,7 +55,7 @@ function AccorDatas() {
   return (
     <div className="accordions">
       {AccordionData.map((accItem, index) => (
-        <Accordion {...accItem} />
+        <Accordion key={index} {...accItem} />
       ))}
     </div>
   );
