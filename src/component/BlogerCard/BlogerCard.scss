@@ -1,17 +1,15 @@
-.blogCard__card h1,
-p {
-  margin: 0;
-}
 .blogCard__card {
   background: #ffffff;
   box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
   border-radius: 16px;
   padding: 10px;
   display: flex;
-  align-items: center;
-  column-gap: 38px;
-  row-gap: 15px;
+  justify-content: space-between;
+  gap: 15px;
   flex-wrap: wrap;
+}
+.blogCard__image {
+  width: 200px;
 }
 .blogCard__image img {
   border-radius: 8px;
@@ -21,6 +19,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   row-gap: 25px;
+  width: 225px;
 }
 .blogCard__title {
   font-family: "Gilroy";
@@ -67,19 +66,38 @@ p {
 
 // Responsive style start
 
-// @media (max-width: 630px) {
-//   .blogCard__card {
-//     justify-content: center;
-//     text-align: center;
-//   }
-//   .blogCard__info {
-//     align-items: center;
-//     row-gap: 10px;
-//   }
-//   .blogCard__stars {
-//     justify-content: center;
-//   }
-//   .blogCard__desc {
-//     text-align: center;
-//   }
-// }
+@media (max-width: 1240px) {
+  .blogCard__card {
+    justify-content: center;
+    text-align: center;
+  }
+  .blogCard__image {
+    width: 100%;
+  }
+  .blogCard__image img {
+    object-fit: cover;
+  }
+  .blogCard__info {
+    align-items: center;
+    row-gap: 10px;
+    width: 100%;
+  }
+  .blogCard__stars {
+    justify-content: center;
+  }
+  .blogCard__desc {
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .blogCard__card {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  .blogCard__card {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

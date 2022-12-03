@@ -1,0 +1,127 @@
+[
+    {
+        "id": 1,
+        "img": "assets/images/page3/page3_card1.png",
+        "title":"Abercrombie & Fitch",
+        "link2": "Только выкуп с оператором →",
+        "sum": "£7.99 (3365₽)",
+        "txtColor": "CLEARANCE",
+        "txtColor2": "Abercrombie kids",
+        "span": "цены от",
+        "span2": "разделе: мужские вещи:",
+        "span3": "женские вещи:",
+        "span4": "качественные детские вещи на"
+    },
+    {
+        "id": 2,
+        "img": "assets/images/page3/page3_card2.png",
+        "title":"Timberland ",
+        "text": "  £7.99 (3365₽)  £7.99 (3365₽)",
+        "link2": "Только выкуп с оператором →",
+        "bold": "NEW!",
+        "txtColor": "Tommy Hilfiger x Timberland!",
+        "span": " Коллаб ",
+        "span2": "Ботинки от",
+        "span3": "Зимние шапки за",
+        "sum": "£7.99 (3365₽)"
+    },
+    {
+        "id": 3,
+        "img": "assets/images/page3/page3_card3.png",
+        "title":"Polo Ralph Lauren",
+        "link2": "Только выкуп с оператором →",
+        "txtColor": "Рубашка",
+        "txtColor2": " Худи  ",
+        "txtColor3": "Свитшот с лого",
+        "precent": "40%",
+        "span": "за",
+        "span2": "До ",
+        "span3": "в разделе SALE",
+        "sum": "£7.99 (3365₽)"
+    },
+    {
+        "id": 4,
+        "img": "assets/images/page3/page3_card4.png",
+        "title":"Hollister Co.",
+        "link2": "Только выкуп с оператором →",
+        "txtColor": "CLEARANCE",
+        "txtColor2": "CLEARANCE",
+        "span": "цены от",
+        "span2": "разделе: мужские вещи: ",
+        "span3": " женские вещи:",
+        "sum": "£7.99 (3365₽)"
+    },
+    {
+        "id": 5,
+        "img": "assets/images/page3/page3_card5.png",
+        "title":"Michael Kors",
+        "link2": "В магазин →",
+        "precent": "60%",
+        "bold": "Новая коллекция! Michael Kors x 007 (James Bond) HOLIDAY HEAD START 60%",
+        "span": " на сумки, обувь и одежду"
+    },
+    {
+        "id": 6,
+        "img": "assets/images/page3/page3_card6.png",
+        "title":"Аутлет Saks OFF 5TH",
+        "link2": "Только выкуп с оператором →",
+        "bold": "Black Friday Early Access",
+        "precent": "60% OFF",
+        "span": "Брендовые шапки, шарфы и перчатки -",
+        "span2": "Shop Pajar, Sorel, UGG, Calvin Klein eans, Tommy Hilfiger "
+    },
+    {
+        "id": 7,
+        "img": "assets/images/page3/page3_card7.png",
+        "title":"Victoria's Secret",
+        "text": "  £7.99 (3365₽) £7.99 (3365₽) -   $25 ",
+        "link2": "В магазин →",
+        "bold": "Лосьоны и мисты за ",
+        "bold2": "7 трусиков за ",
+        "bold3": " Потрать ",
+        "bold4": " купон на ",
+        "span": "Халаты за",
+        "span2": "получи ",
+        "span3": "на следующий заказ",
+        "sum": "£7.99 (3365₽)"
+    },
+    {
+        "id": 8,
+        "img": "assets/images/page3/page3_card8.png",
+        "title":"levi.com",
+        "link2": "Только выкуп с оператором →",
+        "bold": "Скидка",
+        "bold2": "на заказы от $100 с кодом TREAT30",
+        "txtColor": "Джинсы",
+        "precent": "30%",
+        "span": "от",
+        "sum": "£7.99 (3365₽)"
+    },
+    {
+        "id": 9,
+        "img": "assets/images/page3/page3_card9.png",
+        "title":"UGG® - вход с VPN",
+        "link2": "Только выкуп с оператором →",
+        "txtColor": "SALE Мужские угги",
+        "txtColor2": " Слипперы ",
+        "span": "Угги за",
+        "span2": "Ботинки UGG от ",
+        "span3": "в разделе",
+        "span4": "за",
+        "span5": "за",
+        "sum": "£7.99 (3365₽)"
+    },
+    {
+        "id": 10,
+        "img": "assets/images/page3/page3_card10.png",
+        "title":"New Balance",
+        "link2": "Только выкуп с оператором →",
+        "bold": "Вход с VPN -",
+        "bold2": "Бесплатная",
+        "bold3": "$50+",
+        "precent": "30%",
+        "span": " на некоторые модели",
+        "span2": "доставка "
+    }
+    
+]

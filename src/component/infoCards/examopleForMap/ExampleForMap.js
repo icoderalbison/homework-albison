@@ -1,7 +1,7 @@
 import React from "react";
 import InfoCards from "../InfoCards";
-import "./exampleForMap.scss"; //page1
-// import "./exampleForMapPage6.scss"; //page6
+// import "./exampleForMap.scss"; //page1
+import "./exampleForMapPage6.scss"; //page6
 
 
 let datasPage1 = [
@@ -54,7 +54,7 @@ function ExampleForMap() {
   return (
     <div className="container">
     <div className="mapInfoCards">
-      {datasPage1.map((el, index) => (
+      {datasPage6.map((el, index) => (
         <InfoCards {...el} />
       ))}
     </div>

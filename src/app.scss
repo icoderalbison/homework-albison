@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-body{
+body {
   padding: 0 60px;
 }
 
@@ -21,7 +21,17 @@ input[type="checkbox"]:checked ~ .navbar {
   margin: 0 auto;
   padding: 0 260px;
 }
-
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+  width: 100%;
+}
+main {
+  margin-top: 163px;
+}
 header {
   padding: 36px 0;
   display: flex;
@@ -183,7 +193,7 @@ header {
 }
 
 @media (max-width: 1280px) {
-  body{
+  body {
     padding: 0 50px;
   }
   .container {
@@ -223,10 +233,9 @@ header {
 
     grid-column-gap: 50px;
   }
-  
 }
 @media (max-width: 1024px) {
-  body{
+  body {
     padding: 0 40px;
   }
   .container {
@@ -285,7 +294,7 @@ header {
   }
 }
 @media (max-width: 768px) {
-  body{
+  body {
     padding: 0 30px;
   }
   .container {
@@ -297,7 +306,7 @@ header {
 }
 
 @media (max-width: 640px) {
-  body{
+  body {
     padding: 0 20px;
   }
   .container {
@@ -313,7 +322,7 @@ header {
 }
 
 @media (max-width: 425px) {
-  body{
+  body {
     padding: 0 10px;
   }
   .container {

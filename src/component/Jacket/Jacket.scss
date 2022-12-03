@@ -11,17 +11,21 @@ html {
   font-size: 10px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .wrapOfJacket {
   display: grid;
-  height: 70vh;
   grid-template-columns: 1fr 2fr 1fr;
-  padding: 3rem 5rem;
+  padding: 10rem 0;
   .rus {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4rem;
+    // grid-column: 1/2;
+    h1 {
+      font-size: 2rem;
+    }
     .row {
+      width: 100%;
       gap: 1rem;
       display: flex;
       background-color: #f2f6fc;
@@ -37,37 +41,42 @@ html {
         }
       }
     }
-  }
-  .jacket {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1.8rem;
-    .jacket-span {
-      font-weight: 300;
-      font-size: 1.8rem;
-    }
-    p.jacket-p {
-      color: $black;
-      font-size: 2rem;
-      font-weight: 700;
-      b {
-        color: $green;
+
+    .row2 {
+      margin-top: 20rem;
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      .img-div {
+        img {
+          width: 10rem;
+        }
+      }
+      //   justify-content: center;
+      .img-div {
+        background-color: #f2f6fc;
+        border-radius: 50%;
+        padding: 1rem;
+      }
+      .right-ic {
+        // width: 10rem;
+        cursor: pointer;
       }
     }
   }
+
   .uk {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4rem;
+    // grid-column: 3/4;
     h1 {
+      font-size: 2rem;
+      font-weight: bold;
       b {
+        font-size: 2rem;
         color: $green;
       }
     }
     .row {
+      width: 100%;
       gap: 1rem;
       display: flex;
       background-color: #f2f6fc;
@@ -81,6 +90,132 @@ html {
           font-weight: 700;
           font-size: 2rem;
           color: $green;
+        }
+      }
+    }
+    .row2 {
+      margin-top: 20rem;
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      width: 100%;
+      justify-content: flex-end;
+      position: relative;
+      // justify-content: center;
+      .img-div {
+        // border-radius: 50%;
+        padding: 1rem;
+        img {
+          width: 7rem;
+        }
+        .circle {
+          width: 12rem;
+          height: 12rem;
+          background-color: #f2f6fc;
+          z-index: -2;
+          border-radius: 50%;
+          position: absolute;
+          transform: translateY(-97%) translateX(-18%);
+        }
+      }
+      .right-ic {
+        // width: 10rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .childd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+  .jacket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8rem;
+    // grid-column: 1/4;
+    // grid-row: 1/2;
+
+    .jacket-span {
+      font-weight: 300;
+      font-size: 1.8rem;
+    }
+    p.jacket-p {
+      color: $black;
+      font-size: 2.5rem;
+      font-weight: 700;
+      b {
+        color: $green;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapOfJacket {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    row-gap: 10rem;
+    padding: 5rem 0;
+    // grid: 10rem;
+    .jacket {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+    .rus {
+      text-align: center;
+      grid-column: 1/2;
+      .row {
+        padding: 3rem 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .uk {
+      grid-column: 2/3;
+    }
+    .childd {
+      h1 {
+        width: 100%;
+        font-size: 1.6rem;
+        text-align: center;
+        b {
+          font-size: 1.6rem;
+        }
+      }
+      .row {
+        padding: 3rem 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      .row2 {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapOfJacket {
+    .rus {
+      grid-column: 1/3;
+    }
+    .uk {
+      grid-column: 1/3;
+    }
+    .childd {
+      gap: 0;
+      .row2 {
+        width: 100%;
+        justify-content: center;
+        .ARROW {
+          display: none;
         }
       }
     }

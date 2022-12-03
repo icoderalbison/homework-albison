@@ -1,250 +1,247 @@
 .conta {
-    margin: 0 auto;
-    padding: 0 5px;
+  margin: 0 auto;
+  padding: 0 5px;
 }
 
 .Card {
-    background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
-    border-radius: 36px;
-    padding: 50px 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  background: linear-gradient(79.63deg, #5b52a3 1.08%, #40b8ea 100%);
+  border-radius: 36px;
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 800px) {
+    padding: 20px 0px;
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    width: 420px;
+    margin: 20px auto;
 
     @media screen and (max-width: 800px) {
-        padding: 20px 0px;
-        margin: 0;
+      width: 320px;
     }
+  }
 
-    img {
-        display: block;
-        width: 420px;
-        margin: 20px auto;
+  .all_texts {
+    max-width: 60%;
+    text-align: left;
+    margin-left: 50px;
+    margin: 0 auto;
 
-        @media screen and (max-width: 800px) {
-            width: 320px;
-        }
-    }
-
-    .all_texts {
-        max-width: 60%;
-        text-align: left;
-        margin-left: 50px;
-        margin: 0 auto;
-
-        @media screen and (max-width: 1200px) {
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-
-        @media screen and (max-width: 800px) {
-            margin: 0 auto;
-        }
-
-        h2 {
-            font-family: 'Gilroy';
-            font-style: normal;
-            font-weight: 800;
-            font-size: 55px;
-            line-height: 70px;
-            color: #FFFFFF;
-            margin-bottom: 20px;
-            text-align: left;
-
-            @media screen and (max-width: 1200px) {
-                font-size: 23px;
-                line-height: 40px;
-                text-align: center;
-            }
-        }
-
-        h3 {
-            font-family: 'Gilroy';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 35px;
-            line-height: 40px;
-            color: #FFFFFF;
-            text-align: left;
-
-            @media screen and (max-width: 1200px) {
-                font-size: 23px;
-                line-height: 40px;
-                text-align: center;
-            }
-        }
-
-        p {
-            font-family: 'Gilroy';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 22px;
-            line-height: 42px;
-            color: #FFFFFF;
-            margin-bottom: 20px;
-            text-align: left;
-
-            @media screen and (max-width: 1200px) {
-                font-size: 18px;
-                line-height: 40px;
-                text-align: center;
-            }
-        }
-
-        button {
-            display: block;
-            width: 200px;
-            height: 50px;
-            background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
-            box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
-            border-radius: 36px;
-            border: none;
-            font-family: 'Gilroy';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 15px;
-            line-height: 18px;
-            text-align: center;
-            color: #FFFFFF;
-
-            @media screen and (max-width: 1200px) {
-                font-size: 18px;
-                line-height: 40px;
-                margin: 0 auto;
-            }
-        }
-    }
-
-}
-
-.Right {
-    max-width: 630px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    @media screen and (max-width: 1710px) {
-        width: 100%;
-        margin: 0 auto;
-        margin-left: 200px;
-
-        .right__inner {
-            width: 1700px;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-    }
-
-    @media screen and (max-width: 1210px) {
-        margin: 0;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
     }
 
     @media screen and (max-width: 800px) {
-        .right__inner {
-            width: 1700px;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
+      margin: 0 auto;
     }
 
-    input {
-        background: none;
-        width: 300px;
-        border: 2px solid white;
-        padding: 22px;
-        border-top: none;
-        border-left: none;
-        border-right: none;
+    h2 {
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 55px;
+      line-height: 70px;
+      color: #ffffff;
+      margin-bottom: 20px;
+      text-align: left;
 
-        @media screen and (max-width: 1700px) {
-            width: 100%;
-            margin: 0 auto;
-        }
+      @media screen and (max-width: 1200px) {
+        font-size: 23px;
+        line-height: 40px;
+        text-align: center;
+      }
+    }
 
-        &::placeholder {
-            font-family: 'Gilroy';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 16px;
-            color: #FFFFFF;
-        }
+    h3 {
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 40px;
+      color: #ffffff;
+      text-align: left;
 
+      @media screen and (max-width: 1200px) {
+        font-size: 23px;
+        line-height: 40px;
+        text-align: center;
+      }
+    }
+
+    p {
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 42px;
+      color: #ffffff;
+      margin-bottom: 20px;
+      text-align: left;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+      }
     }
 
     button {
-        width: 250px;
-        height: 50px;
-        background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
-        box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
-        border-radius: 36px;
-        border: none;
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 18px;
-        text-align: center;
-        margin-top: 20px;
-        color: #FFFFFF;
+      display: block;
+      width: 200px;
+      height: 50px;
+      background: linear-gradient(90deg, #00c97b 0%, #00d981 96.96%);
+      box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+      border-radius: 36px;
+      border: none;
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      text-align: center;
+      color: #ffffff;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 18px;
+        line-height: 20px;
+        margin: 0 auto;
+      }
     }
+  }
 }
 
-.inp {
+.Right {
+  max-width: 630px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1710px) {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 200px;
+
+    .right__inner {
+      width: 1700px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+
+  @media screen and (max-width: 1210px) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 800px) {
+    .right__inner {
+      width: 1700px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  }
+
+  input {
     background: none;
-    width: 400px;
+    width: 300px;
     border: 2px solid white;
     padding: 22px;
     border-top: none;
     border-left: none;
     border-right: none;
 
-    @media screen and (max-width: 800px) {
-        width: 200px;
+    @media screen and (max-width: 1700px) {
+      width: 100%;
+      margin: 0 auto;
     }
 
     &::placeholder {
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 16px;
-        color: #FFFFFF;
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 16px;
+      color: #ffffff;
     }
+  }
+
+  button {
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(90deg, #00c97b 0%, #00d981 96.96%);
+    box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+    border-radius: 36px;
+    border: none;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+}
+
+.inp {
+  background: none;
+  width: 400px;
+  border: 2px solid white;
+  padding: 22px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  @media screen and (max-width: 800px) {
+    width: 200px;
+  }
+
+  &::placeholder {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+  }
 }
 
 .box {
-    gap: 50px;
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 
-    p {
-        max-width: 450px;
-    }
+  p {
+    max-width: 450px;
+  }
 }
 
 .links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    flex-wrap: wrap;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  flex-wrap: wrap;
+  margin: 0 auto;
 
-    a {
-        width: 66px;
+  a {
+    width: 66px;
 
-        img {
-            width: 66px;
-        }
+    img {
+      width: 66px;
     }
+  }
 }
