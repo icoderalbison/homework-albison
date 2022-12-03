@@ -72,11 +72,11 @@ const Prices = () => {
         <Uslugi />
       </div>
 
-      <div className="price__banner container">
+      <div className="price__banner">
         <Cards
           BigTitle="Услуги доставки из Великобритании"
           imgleft="./assets/images/page4/illustration.png"
-          inpRight={true}
+          Inp={true}
           button="Отправить"
           text2="Нажимая на кнопку вы подтверждаете согласие с правилами предоставления услуги и политикой конфиденциальности"
         />
