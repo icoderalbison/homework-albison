@@ -14,19 +14,16 @@ function Accordion(props) {
     setTimeout(() => {
       answer.current.style.transform = "translate(0, 0)";
     }, 0);
-AccordionData
   }
   function minus(target) {
     setState(0);
 
     target.style.transform = "rotate(180deg)";
     answer.current.style.transform = "translate(0, -20px)";
-    answer.current.style.transition = "2s";
 
     setTimeout(() => {
       answer.current.style.display = "none";
     }, 200);
-
   }
   function click({ target }) {
     state ? minus(target) : plus(target);
@@ -55,7 +52,7 @@ AccordionData
   );
 }
 
-function AccorDatas() {y
+function AccorDatas() {
   return (
     <div className="accordions">
       {AccordionData.map((accItem, index) => (
