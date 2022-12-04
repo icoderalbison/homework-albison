@@ -1,0 +1,77 @@
+.main {
+   overflow: hidden;
+}
+
+.label-forFAQ {
+   position: relative;
+   background: #f4f4f8;
+   z-index: 1;
+
+   &_text {
+      font-size: 20px;
+      color: #002b49;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px 20px 20px;
+
+      &::after {
+         content: url("../../../public/assets/media/accardion-icons/toggle-plus.svg");
+      }
+
+      &--open {
+         &::after {
+            content: url("../../../public/assets/media/accardion-icons/toggle-minus.svg");
+         }
+      }
+   }
+}
+.label-forApply {
+   position: relative;
+   background: #fff;
+   z-index: 1;
+
+   &_text {
+      display: inline-flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 47px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #002b49;
+      cursor: pointer;
+      gap: 15px;
+
+      @media only screen and (max-width: 555px) {
+         font-size: 18px;
+      }
+      &::after {
+         content: url("../../../public/assets/media/accardion-icons/arrow-down.svg");
+         transition: 0.5s;
+         margin-bottom: 5px;
+      }
+
+      &--open {
+         &::after {
+            transform: rotate(-180deg);
+         }
+      }
+   }
+}
+.content {
+   position: relative;
+   max-height: 0px;
+   overflow: hidden;
+   transition: all 0.5s;
+   transform: translateY(-100%);
+   opacity: 0;
+}
+
+.content--open {
+   max-height: 9999999999px;
+   overflow: unset;
+   transform: translateY(0%);
+   opacity: 1;
+}
