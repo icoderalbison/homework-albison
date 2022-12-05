@@ -134,7 +134,7 @@
 @media (max-width: 768px) {
   .facts-root {
     height: 400px;
-    background-position: 4em 170px;
+    background-position: 4em 190px;
     .facts-text {
       top: 20px;
       left: 30px;
@@ -153,31 +153,73 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .facts-root {
-    height: 300px;
-    background-position: right 110px;
+    height: 400px;
+    background-position: 3em 220px;
     .facts-text {
       top: 20px;
-      left: 30px;
+      left: 20px;
       padding-right: 60px;
       h1 {
-        font-size: 56px;
-        line-height: 72px;
+        font-size: 45px;
+        line-height: 32px;
       }
       h2 {
         font-size: 18px;
-        line-height: 28px;
+        line-height: 18px;
         letter-spacing: -0.03em;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
       }
     }
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 550px) {
+  .facts-root {
+    height: 350px;
+    background-position: 3em 190px;
+    .facts-text {
+      top: 20px;
+      left: 20px;
+      padding-right: 60px;
+      h1 {
+        font-size: 45px;
+        line-height: 32px;
+      }
+      h2 {
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 510px) {
+  .facts-root {
+    height: 330px;
+    background-position: 3em 190px;
+    .facts-text {
+      top: 20px;
+      left: 20px;
+      padding-right: 60px;
+      h1 {
+        font-size: 45px;
+        line-height: 32px;
+      }
+      h2 {
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 426px) {
   .facts-root {
     height: 300px;
-    background-position: 11em 100px;
+    background-position: 12em 100px;
     .facts-text {
       top: 20px;
       left: 30px;
@@ -219,7 +261,7 @@
 @media (max-width: 320px) {
   .facts-root {
     height: 300px;
-    background-position: 5em 110px;
+    background-position: 6em 110px;
     .facts-text {
       top: 20px;
       left: 30px;
