@@ -9,23 +9,29 @@ import Title from '../../components/title/Title'
 import '../Page4/p.scss'
 import AmityInputs from '../../components/InputsButtons/AmityInputs'
 import Button from '../../components/InputsButtons/Button'
+import Select from '../../components/InputsButtons/Select'
 
 const Page4 = () => {
     return (
         <>
 
-            <Title titleUp="Home  ::  PAGE  ::  Current page"  />
-            <Title   title="Apply Today"/>
+            <Title titleUp="Home  ::  PAGE  ::  Current page" />
+            <Title title="Apply Today" />
 
             <div className='g'>
                 <Stick color="red" />
             </div>
+
+            <h2 className='h'>
+                Application Form
+            </h2>
 
 
             <Accordion
                 type={"forApply"}
                 title={"Enquirer Details"}
                 content={<div className='b'>
+                    <Select label="Title*" salom />
                     <AmityInputs label="Forename*" type="text" placeholder="Forename" />
                     <AmityInputs label="Middle Names" type="text" placeholder="Middle Names" />
                     <AmityInputs label="Surname*" type="text" placeholder="Surname" />
