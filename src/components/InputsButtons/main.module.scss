@@ -13,7 +13,7 @@
     align-items: center;
     gap: 10px;
 
-    label{
+    .label{
         width: 140px;
         text-align: end;
         font-style: normal;
@@ -48,6 +48,36 @@
             color: #A7A8A9;
         }
     }
+
+    select{
+        width: 100%;
+        padding: 15px;
+        background: white;
+        border: none;
+        outline: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        color: #A7A8A9;
+        border: 1px solid #FFC600;
+    
+        &::placeholder{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            color: #A7A8A9;
+        }
+
+        option{
+            width: 100%;
+        }
+    }
 }
 
 .background{
@@ -60,6 +90,10 @@
 
 .borderRadius{
     border-radius: 20px;
+}
+
+.none{
+    display: none;
 }
 
 .btn{

@@ -4,6 +4,7 @@ import MainLayout from "./layouts/about/Main.layout";
 import Tabs from "./components/tab/Tabs";
 import data1 from './components/tab/tabsType1.json'
 
+
 function App() {
   return (
     <div className="App">
