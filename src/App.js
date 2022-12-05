@@ -8,12 +8,11 @@ import Page4 from "./pages/Page4/Page4";
 
 function App() {
   return (
-    <div className="container">
-      {/* <MainLayout>
+    <div className="App">
+      <MainLayout>
       <Tabs {...data1}/>
 
-      </MainLayout> */}
-      <Page4/>
+      </MainLayout>
     </div>
   );
 }
