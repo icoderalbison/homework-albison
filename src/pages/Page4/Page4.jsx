@@ -8,19 +8,47 @@ import rasm3 from '../././../components/facts/facts3.png'
 import Title from '../../components/title/Title'
 import '../Page4/p.scss'
 import AmityInputs from '../../components/InputsButtons/AmityInputs'
+import Button from '../../components/InputsButtons/Button'
 
 const Page4 = () => {
     return (
         <>
 
-            <Title titleUp="Home  ::  PAGE  ::  Current page" title="Apply Today" />
-            <Stick color="red" />
+            <Title titleUp="Home  ::  PAGE  ::  Current page"  />
+            <Title   title="Apply Today"/>
 
-            <Accordion type={"forApply"} title={"Enquirer Details"} content={<AmityInputs label="Title*" type="text" placeholder={"Select options"}/>} 
+            <div className='g'>
+                <Stick color="red" />
+            </div>
+
+
+            <Accordion
+                type={"forApply"}
+                title={"Enquirer Details"}
+                content={<div className='b'>
+                    <AmityInputs label="Forename*" type="text" placeholder="Forename" />
+                    <AmityInputs label="Middle Names" type="text" placeholder="Middle Names" />
+                    <AmityInputs label="Surname*" type="text" placeholder="Surname" />
+                    <AmityInputs label="E-mail Address*" type="email" placeholder="E-mail Address" />
+                    <AmityInputs label="Mobile Number*" type="text" placeholder="+ ( ___ ) __ - ___ - __ - __" />
+
+                    <p>Please provide the mobile number in the following format - 971541234567 ( If you live in the UAE)
+                    </p>
+
+                    <Button text="Next" borderRadius="30px" padding="10px 20px" width="100%" bg="#002B49" uppercase color="white" />
+                </div>}
             />
-            
-            <Accordion type={"forApply"} title={"Applicants"} />
-            <Accordion type={"forApply"} title={"Contacts"} />
+            <Accordion type="forApply" title="Applicants" content={
+                <div>
+                    <AmityInputs label="Middle Names" type="text" placeholder="Middle Names" />
+                    <AmityInputs label="Surname*" type="text" placeholder="Surname" />
+                </div>} />
+
+            <Accordion type="forApply" title="Contacts" content={
+                <div>
+                    <AmityInputs label="Middle Names" type="text" placeholder="Middle Names" />
+                    <AmityInputs label="Surname*" type="text" placeholder="Surname" />
+                </div>} />
 
 
             <div className='facts'>
