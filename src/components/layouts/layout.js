@@ -33,15 +33,15 @@ const layout = (props) => {
 
         <h1>Students Life</h1>
 
-        <Link to="studentCounsil.js">
-          <button className='StudentCounsil__btn' onClick={imageChange1}>{btn1.buttonName}</button>
-        </Link>
-        <Link to="Clubs.js">
-          <button className='Clubs__btn' onClick={imageChange2}>{btn2.buttonName}</button>
-        </Link>
-        <Link to="AcademicCalendar.js">
-          <button className='AcademicCalendar__btn' onClick={imageChange1}>{btn3.buttonName}</button>
-        </Link>
+          <Link to="studentCounsil.js">
+            <button className='StudentCounsil__btn' onClick={imageChange1}>{btn1.buttonName}</button>
+          </Link>
+          <Link to="Clubs.js">
+            <button className='Clubs__btn' onClick={imageChange2}>{btn2.buttonName}</button>
+          </Link>
+          <Link to="AcademicCalendar.js">
+            <button className='AcademicCalendar__btn' onClick={imageChange1}>{btn3.buttonName}</button>
+          </Link>
 
       </header>
 

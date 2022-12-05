@@ -1,9 +1,6 @@
 *{
 
-    button{
-        cursor: pointer;
-        outline: none;
-    }
+    
     list-style: none;
     text-decoration: none;
 }
@@ -39,13 +36,19 @@
     padding-top: 30px;
     text-align: center;
     
+    
     h1{
         font-size: 35px;
+    }
+    button{
+        cursor: pointer;
+        outline: none;
+        width: 25%;
+        margin: 10px;
     }
     .StudentCounsil__btn, .Clubs__btn, .AcademicCalendar__btn{
         border: 0;
         margin: 10px;
-        width: 250px;
         height: 40px;
         padding: 10px;
         transition: 0.4s;
@@ -87,4 +90,20 @@
             }
         }
     }
+}
+@media(max-width: 520px){
+   .header{
+        display: block;
+        height: 250px;
+        text-align: center;
+        .StudentCounsil__btn, .Clubs__btn, .AcademicCalendar__btn{
+            width: 150px;
+            font-size: 14px;
+            display: block;
+            margin: 10px auto;
+        }
+   }
+   .pagecha{
+    display: block;
+   }
 }
