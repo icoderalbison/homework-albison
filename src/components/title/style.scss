@@ -22,6 +22,30 @@
         text-align: center;
         text-transform: uppercase;
         color: #0055B8;
+        &Gray{
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            color: gray;
+        }
+        
+        
+    }
+    &UpSolid{
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration-line: underline;
+        color: #0055B8;
+    
     }
     &Down{
         text-align: center;
@@ -32,6 +56,13 @@
         line-height: 1.75;
         color: #002B49;
     }
+
+}
+#titleUpLink{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
 }
 
 .carousel{
@@ -62,6 +93,14 @@
         font-size: 40px;
         line-height: 43px;
         &Up{
+            font-size: 16px;
+            line-height: 26px;
+            &Gray{
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+        &UpSolid{
             font-size: 16px;
             line-height: 26px;
         }
@@ -96,10 +135,21 @@
         &Up{
             font-size: 14px;
             line-height: 20px;
+            &Gray{
+                font-size: 14px;
+                line-height: 20px;  
+            }
+        }
+        &UpSolid{
+            font-size: 14px;
+            line-height: 20px;
         }
         &Down{
             font-size: 13px;
         }
+    }
+    #titleUpLink{
+        gap: 5px;
     }
 }
 @media(max-width: 400px){

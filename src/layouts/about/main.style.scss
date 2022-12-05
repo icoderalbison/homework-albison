@@ -13,6 +13,14 @@
     margin: -170px auto 0;
     background-color: rgb(255, 255, 255);
     padding: 40px 0;
+    &__title {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
     &__flex {
       display: grid;
       grid-template-columns: 30% 55%;

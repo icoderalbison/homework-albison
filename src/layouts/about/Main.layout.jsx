@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "../../components/title/Title";
+import Stick from "../../components/title/Stick";
 import { NavLink } from "react-router-dom";
 import "./main.style.scss";
 
@@ -21,7 +22,11 @@ function MainLayout({ children }) {
         alt=""
       />
       <div className="main-layout__body">
-        <Title />
+        <div className="main-layout__body__title">
+          <Title titleUp="Home :: Page " />
+          <Title title="About Us" />
+          <Stick color="#ffc600" />
+        </div>
         <div className="main-layout__body__flex">
           <div className="main-layout__body__links">
             {links.map((link) => (
