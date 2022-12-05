@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", 'Times New Roman', Times, serif;
+}
+
+.infoCard {
+  padding: calc(15px + 20 * (100vw / 1400)) calc(20px + 20 * (100vw / 1400));
+  background: #ffffff;
+  box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+  border-radius: 16px;
+  max-width: 500px;
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #1f2428;
+    margin: 30px 0 10px;
+  }
+  &__txt {
+    font-weight: 300;
+    font-size: 16px;
+    color: #1f2428;
+  }
+}

@@ -1,0 +1,24 @@
+html {
+  font-size: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+.wrap {
+  // height: 70vh;
+  width: 100%;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  .myBtn {
+    background: linear-gradient(90deg, #00c97b 0%, #00d981 96.96%);
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+    border-radius: 36px;
+    cursor: pointer;
+  }
+}

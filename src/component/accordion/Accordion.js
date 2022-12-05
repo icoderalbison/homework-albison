@@ -1,47 +1,64 @@
-import React, { useEffect, useState } from "react";
-import './accorStyle.scss'
+import React, { useEffect, useState, useRef } from "react";
+import { AccordionData } from "./AccordionData";
+import accor from "./accorStyle.scss";
+import Title from "../TITLE/Title";
 
 function Accordion(props) {
   const [state, setState] = useState(0);
-  function plus() {
-    setState(1)
-    document.querySelector(".accor__ans").style.display = "block"
+  const answer = useRef();
+  function plus(target) {
+    setState(1);
+
+    target.style.transform = "rotate(0)";
+    answer.current.style.display = "block";
     setTimeout(() => {
-      document.querySelector(".accor__ans").style.transform= "translate(0, 0)";
-      
+      answer.current.style.transform = "translate(0, 0)";
     }, 0);
-    document.querySelector(".accor__arrow").style.transform = "rotate(135deg)";
   }
-  function minus() {
-    setState(0)
-    document.querySelector(".accor__ans").style.transform = "translate(0, -20px)";
+  function minus(target) {
+    setState(0);
+
+    target.style.transform = "rotate(180deg)";
+    answer.current.style.transform = "translate(0, -20px)";
+
     setTimeout(() => {
-    document.querySelector(".accor__ans").style.display = "none"
+      answer.current.style.display = "none";
     }, 200);
-    document.querySelector(".accor__arrow").style.transform = "rotate(0)";
   }
-  function click() {
-    state ? minus() : plus();
-  }  
+  function click({ target }) {
+    state ? minus(target) : plus(target);
+  }
 
-  return (<>
-
-    <h1 className="accor__tit">{props.title}</h1>
-    <div className="accor__card">
-      <div className="accor__quest">{props.question}</div>
-      <button  onClick={click} className="accor__arrow">+</button>
-      <div className="accor__ansDiv">
-        <div  className="accor__ans">{props.answer}</div>
+  return (
+    <>
+      <div className="accor">
+        <div className="container">
+          <Title title={props.title} color="black" size="44" />
+          <div className="accor__card">
+            <div className="accor__quest">{props.question}</div>
+            <button onClick={click} className="accor__arrow">
+              ^
+            </button>
+            <div className="accor__ansDiv">
+              <div className="accor__ans" ref={answer}>
+                {props.answer}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </>
+  );
+}
+
+function AccorDatas() {
+  return (
+    <div className="accordions">
+      {AccordionData.map((accItem, index) => (
+        <Accordion key={index} {...accItem} />
+      ))}
     </div>
-    {console.log('render')}
-  </>);
+  );
 }
 
-Accordion.defaultProps ={
-  // title: "Title",    kerak joyga json ga title yoziladi
-  question: "Question",
-  answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos itaque nesciunt tempore, eaque exercitationem consequuntur. Iste impedit eos quia deleniti est vero autem numquam, deserunt quo inventore distinctio temporibus voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe nisi sequi ipsum distinctio perspiciatis! Consectetur, perferendis sunt! Quaerat, laboriosam? Voluptatibus cumque similique ad aut consequuntur asperiores eaque voluptates delectus doloribus?"
-}
-
-export default Accordion;
+export default AccorDatas;

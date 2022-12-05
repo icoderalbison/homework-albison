@@ -1,0 +1,39 @@
+[
+  {
+    "id":1,
+    "image":"./assets/images/page1/page1_fb1.png",
+    "img":"./assets/images/page1/Star 1.png",
+    "title":"NIKOLAY S",
+    "desc":"Ваша доставка самая быстрая и дешёвая!!!",
+    "address":"16 Ноября 2021",
+    "date":"Санкт-Петербург"
+  },
+  {
+    "id":2,
+    "image":"./assets/images/page1/page1_fb2.png",
+    "img":"./assets/images/page1/Star 1.png",
+    "title":"DMITRIY D",
+    "desc":"Пуховик Levi’s c eBay. Всё приехало быстро и целым.",
+    "address":"16 Ноября 2021",
+    "date":"Москва"
+  },
+  {
+    "id":3,
+    "image":"./assets/images/page1/page1_fb3.png",
+    "img":"./assets/images/page1/Star 1.png",
+    "title":"VLADIMIR E",
+    "desc":"Огонь, как всегда! Отдельное спасибо за доп.упаковку, часики от Apple пришли в простом бумажном пакете )",
+    "address":"16 Ноября 2021",
+    "date":"Санкт-Петербург"
+  },
+  {
+    "id":4,
+    "image":"./assets/images/page1/page1_fb4.png",
+    "img":"./assets/images/page1/Star 1.png",
+    "title":"Оксана",
+    "desc":"Очень быстро, надежно! Как всегда большое спасибо за работу!",
+    "address":"16 Ноября 2021",
+    "date":"Odintsovo"
+  }
+  
+]

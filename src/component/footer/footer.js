@@ -1,13 +1,14 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const footer = () => {
   return (
-    <div className='footer'>
+    <div className='container'>
+      <div className='footer'>
         <div className='footer_item_1'>
           <Link to="/">
-          <img src="./assets/logo/logo.png" alt="" />
+            <img src="./assets/logo/logo.png" alt="" />
           </Link>
           <div className='footer_item_1-contact'>
             <div className='contact-icon'>
@@ -64,75 +65,77 @@ const footer = () => {
           </ul>
         </div>
         <div className='footer_item_3'>
-        <p>
-        Полезное
+          <p>
+            Полезное
           </p>
           <ul>
             <li>
               <a href="#">
-              Как работает наш сервис
+                Как работает наш сервис
               </a>
             </li>
             <li>
               <a href="#">
-              Как покупать с оператором
+                Как покупать с оператором
               </a>
             </li>
             <li>
               <a href="#">
-              Ответы на частые вопросы
+                Ответы на частые вопросы
               </a>
             </li>
             <li>
               <a href="#">
-              Популярные магазины
+                Популярные магазины
               </a>
             </li>
             <li>
               <a href="#">
-             Черный список магазинов
+                Черный список магазинов
               </a>
             </li>
             <li>
               <a href="#">
-              Актуальные распродажи
+                Актуальные распродажи
               </a>
             </li>
           </ul>
         </div>
         <div className='footer_item_4'>
-        <p>
-        Спецпроекты
+          <p>
+            Спецпроекты
           </p>
           <ul>
             <li>
               <a href="#">
-              50% на первую доставку
+                50% на первую доставку
               </a>
             </li>
             <li>
               <a href="#">
-              Скидки для постоянных клиентов
+                Скидки для постоянных клиентов
               </a>
             </li>
             <li>
               <a href="#">
-             Реферальная программа
+                Реферальная программа
               </a>
             </li>
             <li>
               <a href="#">
-              Кэшбек Mr. Rebates и Rakuten
+                Кэшбек Mr. Rebates и Rakuten
               </a>
             </li>
             <li>
               <a href="#">
-              Stop Fraud
+                Stop Fraud
               </a>
             </li>
           </ul>
         </div>
       </div>
+    </div>
+
   )
 }
 

@@ -1,0 +1,143 @@
+.title-unique-h1-black{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.2;
+    color: #1F2428;
+}
+.title-unique-h1-white{
+    
+    &-30{
+        font-family: sans-serif;
+        font-style: normal;
+        line-height: 1.2;
+        color: #FFFFFF;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    &-72{
+        font-family: sans-serif;
+        font-style: normal;
+        line-height: 1.2;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 72px;
+    }
+    &-48{
+        font-family: sans-serif;
+        font-style: normal;
+        line-height: 1.2;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 48px;
+    }
+    &-44{
+        font-family: sans-serif;
+        font-style: normal;
+        line-height: 1.2;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 44px;
+    }
+}
+.description-unique-p-black{
+    &-20{
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.8;
+        color: #1F2428;
+    }
+    &-18{
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 2;
+        color: #1F2428;
+    }
+}
+
+@media(max-width:1000px){
+    .title-unique-h1-black{
+        font-size: 36px;
+    }
+    .title-unique-h1-white{
+        &-30{
+            font-size: 26px;
+        }
+        &-72{
+            font-size: 58px;
+        }
+        &-48{
+            font-size: 40px;
+        }
+        &-44{
+            font-size: 38px;
+        }
+    }
+    .description-unique-p-black{
+        &-20{
+            font-size: 19px;
+        }
+        &-18{
+            font-size: 17px;
+        }
+    }
+}
+@media(max-width:768px){
+    .title-unique-h1-black{
+        font-size: 30px;
+    }
+    .title-unique-h1-white{
+        &-30{
+            font-size: 20px;
+        }
+        &-72{
+            font-size: 46px;
+        }
+        &-48{
+            font-size: 30px;
+        }
+        &-44{
+            font-size: 26px;
+        }
+    }
+    .description-unique-p-black{
+        &-20{
+            font-size: 18px;
+        }
+        &-18{
+            font-size: 16px;
+        }
+    }
+}
+@media(max-width:500px){
+    .title-unique-h1-black{
+        font-size: 24px;
+    }
+    .title-unique-h1-white{
+        &-30{
+            font-size: 18px;
+        }
+        &-72{
+            font-size: 40px;
+        }
+        &-48{
+            font-size: 26px;
+        }
+        &-44{
+            font-size: 24px;
+        }
+    }
+    .description-unique-p-black{
+        &-20{
+            font-size: 16px;
+        }
+        &-18{
+            font-size: 14px;
+        }
+    }
+}
