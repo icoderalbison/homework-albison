@@ -1,0 +1,14 @@
+.currentRow {
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #002B49;
+  font-size: 15px;
+  padding: 1rem;
+}
+.currentRow b {
+  font-weight: 400;
+}
+.currentRow span {
+  color: #A7A8A9;
+}/*# sourceMappingURL=CurrentPage.css.map */
