@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.faq {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 45px 0;
+  &__pageDir {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #002b49;
+    span{
+        opacity: 0.7;
+    }
+  }
+  &__tit{
+    margin: 30px 0 15px;
+  }
+}

@@ -1,0 +1,44 @@
+.container {
+  overflow-x: auto;
+  max-width: 1000vh;
+}
+
+table {
+  font-size: 20px;
+  border-collapse: collapse;
+  border: none;
+  width: 100%;
+  overflow-x: scroll;
+  //   table-layout: fixed;
+  thead {
+    background-color: #002b49;
+    tr {
+      white-space: nowrap;
+      th {
+        text-transform: uppercase;
+        text-align: center;
+        color: #ffc600;
+        padding: 5px 20px;
+        &:nth-child(1) {
+          min-width: 200px;
+        }
+        &:nth-child(n + 1) {
+          max-width: 220px;
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      white-space: nowrap;
+      td {
+        text-align: center;
+        color: #002b49;
+        padding: 5px 20px;
+      }
+      &:nth-child(2n) {
+        background-color: #f4f4f8;
+      }
+    }
+  }
+}

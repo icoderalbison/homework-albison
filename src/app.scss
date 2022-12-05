@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: inherit;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
-
 
 #check {
   display: none;
@@ -19,9 +23,6 @@ input[type="checkbox"]:checked ~ .navbar {
   padding: 0 260px;
 }
 
-
-
-
 // ===================== Media ======================================
 
 @media (max-width: 1536px) {
@@ -31,31 +32,25 @@ input[type="checkbox"]:checked ~ .navbar {
     margin: 0 auto;
     padding: 0 100px;
   }
-
 }
 
 @media (max-width: 1280px) {
-
   .container {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 50px;
   }
-
 }
 @media (max-width: 1024px) {
-
   .container {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 40px;
   }
-
 }
 @media (max-width: 768px) {
-
   .container {
     width: 100%;
     max-width: 768px;
@@ -65,23 +60,19 @@ input[type="checkbox"]:checked ~ .navbar {
 }
 
 @media (max-width: 640px) {
-
   .container {
     width: 100%;
     max-width: 640px;
     margin: 0 auto;
     padding: 0 20px;
   }
-
 }
 
 @media (max-width: 425px) {
-
   .container {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 10px;
   }
-
 }
