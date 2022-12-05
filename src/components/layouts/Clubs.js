@@ -2,8 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import StudentData from './StudentData.json';
 
 function Clubs() {
+
+    const[data, data2, data3] = StudentData;
+
   return (
     <div>
         <div className="pagecha">
@@ -15,17 +19,17 @@ function Clubs() {
                     <Swiper className='slide'
                       spaceBetween={50}
                       slidesPerView={1}
-                      onSlideChange={() => console.log('slide change')}
-                      onSwiper={(swiper) => console.log(swiper)}
+                      // onSlideChange={() => console.log('slide change')}
+                      // onSwiper={(swiper) => console.log(swiper)}
                     >
                       <SwiperSlide className='slide'>
-                        <img src="assets/media/layoutImages/image4.jpg" alt="" />
+                        <img src={ `assets/media/layoutImages/${data2.img}`} alt="" />
                       </SwiperSlide>
                       <SwiperSlide className='slide'>
-                        <img src="assets/media/layoutImages/image5.png" alt="" />
+                        <img src={ `assets/media/layoutImages/${data2.img2}`} alt="" />
                       </SwiperSlide>
                       <SwiperSlide className='slide'>
-                        <img src="assets/media/layoutImages/image3.png" alt="" />
+                        <img src={ `assets/media/layoutImages/${data2.img3}`} alt="" />
                       </SwiperSlide>
                     </Swiper>
                     
@@ -33,22 +37,18 @@ function Clubs() {
 
                 </div>
             </div>
-            <h3>Clubs</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi enim aliquid quas quos fugit dignissimos iusto asperiores non esse quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis nemo alias eum fugit. Culpa, voluptatibus reiciendis perspiciatis quod, nostrum sequi laudantium eius dicta enim recusandae quisquam vero, eos tenetur. Ea dolorem sapiente velit, doloremque ex repudiandae! Dolorem, commodi aspernatur.
-            </p>
-            <p>
-              ....Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi enim aliquid quas quos fugit dignissimos iusto asperiores non esse quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis nemo alias eum fugit. Culpa, voluptatibus reiciendis perspiciatis quod,
-            </p>
+            <h1>{data2.title}</h1>
+            <p> {data2.text2} </p>
+            <p> {data2.text1} </p>
           </div>
 
           <div className="navbar">
 
             <ul className='sections'>
-              <Link to="Section1" ><li><span>|</span> Section1</li></Link>
-              <Link to="Section2" ><li><span>|</span> Section2</li></Link>
-              <Link to="Section3" ><li><span>|</span> Section3</li></Link>
-              <Link to="Section4" ><li><span>|</span> Section4</li></Link>
+              <Link to="/Section1" ><li><span>|</span> {data2.sec1}</li></Link>
+              <Link to="/Section2" ><li><span>|</span> {data2.sec2}</li></Link>
+              <Link to="/Section3" ><li><span>|</span> {data2.sec3}</li></Link>
+              <Link to="/Section4" ><li><span>|</span> {data2.sec4}</li></Link>
             </ul>
 
           </div>
