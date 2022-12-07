@@ -1,9 +1,14 @@
 import React, { useState, useRef } from "react";
+import CareerData from "../Career/CareerData";
+import CareerRow from "../Career/Table/Table";
 import styles from "./tabs.module.scss";
 
 //  1ta props oladi
- 
+
 // chaqirganda tabsType1 || tabsType2 dan data chaqarib olib propsda spread qilib yubrish kerak
+
+// type1 => 2ta button
+// type2 => 4ta button
 
 //  exp:
 //     import data1 from './tabsType1.json'
@@ -31,7 +36,14 @@ function Tabs(props) {
       content4.current.className =
         styles.tabs__content;
     tab1.current.className = tab2.current.className = styles.tabs__tab;
-    props.button3 && props.button4 ? (tab1.current.className = tab2.current.className = styles.tabs__tab) : console.log("");
+    props.button3 && props.button4
+      ? (tab1.current.className =
+          tab2.current.className =
+          styles.tabs__tab =
+          tab3.current.className =
+          tab4.current.className =
+            styles.tabs__tab)
+      : console.log("");
     if (param == 1) {
       content1.current.className = `${styles.active} ` + styles.tabs__content;
       tab1.current.className = `${styles.activeTab} ` + styles.tabs__tab;
@@ -122,7 +134,18 @@ function Tabs(props) {
           <span></span>
         )}
 
-        {props.type2 ? <div>Table1</div> : <span></span>}
+        {props.type2 ? (
+          <div className={styles.careerDiv}>
+            <div className={styles.career}>
+              <CareerRow head={true} />
+              {CareerData.map((elem, index) => (
+                <CareerRow body={true} {...elem} />
+              ))}
+            </div>
+          </div>
+        ) : (
+          <span></span>
+        )}
         <div className={styles.type2}></div>
       </div>
       <div ref={content2} className={styles.tabs__content}>

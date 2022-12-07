@@ -4,28 +4,36 @@ import TableButton from "./tableButton/tableButton";
 
 import "./Table.scss";
 
-const CareerRow = () => {
+const CareerRow = (props) => {
   return (
-    <div className="container">
+    <div className="">
       <table border={1}>
-        <thead>
-          <tr>
-            <th>Position </th>
-            <th>Deadline </th>
-            <th>Contract type </th>
-            <th>Job description </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Teaching Assistant (contract basis)</td>
-            <td>31 May 22</td>
-            <td>Full-time</td>
-            <td>
-              <TableButton title="VIEW" />
-            </td>
-          </tr>
-        </tbody>
+        {props.head ? (
+          <thead>
+            <tr>
+              <th>Position </th>
+              <th>Deadline </th>
+              <th>Contract type </th>
+              <th>Job description </th>
+            </tr>
+          </thead>
+        ) : (
+          <></>
+        )}
+        {props.body ? (
+          <tbody className="tbody">
+            <tr>
+              <td>{props.position}</td>
+              <td>{props.deadline}</td>
+              <td>{props.contractType}</td>
+              <td>
+                <TableButton title="VIEW" />
+              </td>
+            </tr>
+          </tbody>
+        ) : (
+          <></>
+        )}
       </table>
     </div>
   );

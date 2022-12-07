@@ -1,0 +1,31 @@
+.pCards {
+  padding: 0 20px;
+  width: 420px;
+  position: relative;
+}
+
+.pCards__img {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.pCards__info {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  right: 20px;
+  height: 132px;
+  background: #002b49;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Dubai";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffc600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}/*# sourceMappingURL=ProgramCard.module.css.map */

@@ -1,0 +1,306 @@
+input[type=checkbox]:checked ~ .modal {
+  right: 0;
+}
+
+input[type=checkbox]:checked ~ .navbar .burger {
+  display: none;
+}
+input[type=checkbox]:checked ~ .navbar .close {
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.navbar nav {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.navbar nav ul {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.navbar nav ul li a {
+  font-family: "Dubai";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.navbar nav ul li .active {
+  padding: 10px 25px;
+  background: #ffc600;
+  border-radius: 100px;
+  color: #002b49;
+}
+.navbar nav .links {
+  display: flex;
+  align-items: center;
+}
+.navbar nav .links img {
+  margin-right: 5px;
+}
+.navbar nav .close,
+.navbar nav .burger {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.navbar nav .close {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 180px;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #002b49;
+  overflow-y: auto;
+  transition: all 0.5s ease;
+}
+.modal .sidebar {
+  padding: 60px 0;
+  width: 100%;
+}
+.modal .sidebar .navbar_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 60px;
+  gap: 100px;
+}
+.modal .sidebar .navbar_wrapper h1 {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 65px;
+  text-transform: uppercase;
+  color: #ffc600;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #ffc600;
+}
+.modal .sidebar .navbar_wrapper ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style: none;
+}
+.modal .sidebar .navbar_wrapper ul li a {
+  display: inline-block;
+  align-items: center;
+  font-family: Dubai;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+.modal .sidebar .responsive_navbar {
+  margin-top: 60px;
+  display: none;
+}
+.modal .sidebar .responsive_navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal .sidebar .responsive_navbar ul li a {
+  font-family: "Dubai";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.modal .sidebar .responsive_navbar ul li.active {
+  padding: 10px 25px;
+  background: #ffc600;
+  border-radius: 100px;
+}
+.modal .sidebar .responsive_navbar ul li.active a {
+  color: #002b49;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  .navbar nav {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .navbar nav ul {
+    display: none;
+  }
+  .navbar nav ul li a {
+    font-family: "Dubai";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .navbar nav ul li.active {
+    padding: 10px 25px;
+    background: #ffc600;
+    border-radius: 100px;
+  }
+  .navbar nav ul li.active a {
+    color: #002b49;
+  }
+  .navbar nav .links img {
+    margin-right: 5px;
+  }
+  .modal .sidebar {
+    padding: 60px 0;
+  }
+  .modal .sidebar .navbar_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px;
+    gap: 80px;
+  }
+  .modal .sidebar .navbar_wrapper h1 {
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+  .modal .sidebar .navbar_wrapper ul {
+    margin-top: 30px;
+  }
+  .modal .sidebar .navbar_wrapper ul li a {
+    font-size: 28px;
+  }
+  .modal .sidebar .responsive_navbar {
+    margin-top: 60px;
+    display: block;
+  }
+  .modal .sidebar .responsive_navbar ul li.active {
+    padding: 10px 25px;
+    background: #ffc600;
+    border-radius: 100px;
+  }
+  .modal .sidebar .responsive_navbar ul li.active a {
+    color: #002b49;
+  }
+}
+@media (max-width: 640px) {
+  .navbar {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  .navbar nav {
+    width: 20%;
+  }
+  .navbar nav .links {
+    display: flex;
+    align-items: center;
+  }
+  .navbar nav .links img {
+    margin-right: 5px;
+  }
+  .navbar nav .close,
+.navbar nav .burger {
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .navbar nav .close {
+    display: none;
+  }
+  .modal .sidebar {
+    padding: 30px 0;
+  }
+  .modal .sidebar .navbar_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 60px;
+    gap: 100px;
+  }
+  .modal .sidebar .navbar_wrapper h1 {
+    font-size: 30px;
+    line-height: 65px;
+    padding-bottom: 20px;
+  }
+  .modal .sidebar .navbar_wrapper ul {
+    margin-top: 20px;
+  }
+  .modal .sidebar .navbar_wrapper ul li a {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  .navbar .logo img {
+    width: 200px;
+  }
+  .navbar nav {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .navbar nav ul {
+    display: none;
+  }
+  .navbar nav ul li a {
+    font-family: "Dubai";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .navbar nav ul li.active {
+    padding: 10px 25px;
+    background: #ffc600;
+    border-radius: 100px;
+  }
+  .navbar nav ul li.active a {
+    color: #002b49;
+  }
+  .navbar nav .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar nav .links img {
+    margin-right: 5px;
+  }
+  .modal {
+    top: 160px;
+  }
+}/*# sourceMappingURL=navbar.module.css.map */

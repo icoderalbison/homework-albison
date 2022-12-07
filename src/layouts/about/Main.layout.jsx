@@ -13,7 +13,7 @@ const links = [
   { path: "/q", text: "Policies" },
 ];
 
-function MainLayout({ children }) {
+function MainLayout({ children, title }) {
   return (
     <div className="main-layout">
       <img
@@ -23,8 +23,10 @@ function MainLayout({ children }) {
       />
       <div className="main-layout__body">
         <div className="main-layout__body__title">
-          <Title titleUp="Home :: Page " />
-          <Title title="About Us" />
+          <div className="main-layout__body__subtitle">
+            Home :: PAGE :: <span>Current page</span>
+          </div>
+          <Title title={title} />
           <Stick color="#ffc600" />
         </div>
         <div className="main-layout__body__flex">
