@@ -1,46 +1,54 @@
 import React, { useState } from 'react';
 import Clubs from "./Clubs";
 import './Layout.scss'
-import './Student.scss'
-import './Club.scss'
-import './Academic.scss'
 import StudentCounsil from "./studentCounsil";
 import AcademicCalendar from "./AcademicCalendar";
 import { Link, Route, Routes } from 'react-router-dom';
+import HeaderData from "./headerdData.json"
 import Section1 from './Sections/Section1';
 import Section2 from './Sections/Section2';
 import Section3 from './Sections/Section3';
 import Section4 from './Sections/Section4';
 import Buttons from './buttonsData.json'
+import Title from '../title/Title';
+import Stick from "../title/Stick"
 
-const layout = (props) => {
+const Layout = (props) => {
 
   const[btn1, btn2, btn3] = Buttons;
+  const[header_title] = HeaderData;
 
-  // const [image, setImage] = useState("headerImage")
+  const [image, setImage] = useState("headerImage")
 
   const imageChange1 = () => {
-  //   setImage("headerImage")
+    setImage("headerImage")
   }
   const imageChange2 = () => {
-  //   setImage("headerImage2")
+    setImage("headerImage2")
+  }
+  const imageChange3 = () => {
+    setImage("headerImage3")
   }
 
   return (
     <div>
-      <header className={`header headerImage`}>
+      <header className={`header ${image}`}>
 
-
-        <h1>Students Life</h1>
+        <div className="link"><Title titleUpLink={header_title.link}/></div>
+        <Title title={header_title.title}/>
+        <div className="line"> <Stick color={header_title.line} /></div>
+        
+        
+        <h1></h1>
 
           <Link to="studentCounsil.js">
-            <button className='StudentCounsil__btn' onClick={imageChange1}>{btn1.buttonName}</button>
+            <button className='StudentCounsil__btn' onClick={(e)=> imageChange1(e)}>{btn1.buttonName}</button>
           </Link>
           <Link to="Clubs.js">
-            <button className='Clubs__btn' onClick={imageChange2}>{btn2.buttonName}</button>
+            <button className='Clubs__btn' onClick={(e)=> imageChange2(e)}>{btn2.buttonName}</button>
           </Link>
           <Link to="AcademicCalendar.js">
-            <button className='AcademicCalendar__btn' onClick={imageChange1}>{btn3.buttonName}</button>
+            <button className='AcademicCalendar__btn' onClick={(e)=> imageChange3(e)}>{btn3.buttonName}</button>
           </Link>
 
       </header>
@@ -61,4 +69,4 @@ const layout = (props) => {
   );
 };
 
-export default layout;
+export default Layout;

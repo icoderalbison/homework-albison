@@ -17,8 +17,8 @@ import StudentData from './StudentData.json'
                 <Swiper className='slide'
                   spaceBetween={50}
                   slidesPerView={1}
-                  // onSlideChange={() => console.log('slide change')}
-                  // onSwiper={(swiper) => console.log(swiper)}
+                  onSlideChange={() => console.log('slide change')}
+                  onSwiper={(swiper) => console.log(swiper)}
                 >
                   <SwiperSlide className='slide'>
                     <img src={ `assets/media/layoutImages/${data.img}`} alt="" />
