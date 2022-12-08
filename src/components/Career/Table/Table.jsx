@@ -1,5 +1,4 @@
 import React from "react";
-import CareerData from "../CareerData";
 import TableButton from "./tableButton/tableButton";
 
 import "./Table.scss";
