@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+#stick {
+  height: 6px;
+  width: 110px;
+}
+
+#title {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #002B49;
+}
+#titleUp {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0055B8;
+}
+#titleUpGray {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: gray;
+}
+#titleUpSolid {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0055B8;
+}
+#titleDown {
+  text-align: center;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #002B49;
+}
+
+#titleUpLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.1s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 300px;
+}
+
+@media (max-width: 1024px) {
+  #stick {
+    width: 95px;
+  }
+  #title {
+    font-size: 40px;
+    line-height: 43px;
+  }
+  #titleUp {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #titleUpGray {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #titleUpSolid {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #titleDown {
+    font-size: 14px;
+  }
+}
+@media (max-width: 786px) {
+  #stick {
+    width: 80px;
+  }
+  #title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  #titleUp {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #titleDown {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  #stick {
+    width: 66px;
+  }
+  #title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  #titleUp {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #titleUpGray {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #titleUpSolid {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #titleDown {
+    font-size: 13px;
+  }
+  #titleUpLink {
+    gap: 5px;
+  }
+}
+@media (max-width: 400px) {
+  .carousel .inner {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

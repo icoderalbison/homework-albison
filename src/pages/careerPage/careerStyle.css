@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carCent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12rem;
+}
+
+.carStick {
+  margin: 15px 0 30px;
+}/*# sourceMappingURL=careerStyle.css.map */

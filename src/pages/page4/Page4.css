@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.facts {
+  display: flex;
+}
+@media screen and (max-width: 500px) {
+  .facts {
+    flex-direction: column;
+  }
+}
+
+.h {
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  /* Primary - Blue */
+  color: #002B49;
+  margin: 40px 0;
+}
+
+.b {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.b p {
+  text-align: center;
+  color: #002B49;
+}
+
+.g {
+  width: 100px;
+  margin: 10px auto;
+}/*# sourceMappingURL=Page4.css.map */

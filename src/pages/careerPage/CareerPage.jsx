@@ -8,7 +8,7 @@ import "./careerStyle.scss";
 
 function CareerPage() {
   return (
-    <div className="carCent">
+    <div className="carCent container">
       <CurrentPage />
       <Title title="Career Centre" />
       <div className="carStick">
