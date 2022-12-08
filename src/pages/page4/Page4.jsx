@@ -13,7 +13,7 @@ import Select from "../../components/InputsButtons/Select";
 
 const Page4 = () => {
     return (
-        <div className="a">
+        <div className="container">
             <Title titleUp={
                 <span>
                     <a href='#'>Home</a> :: <a href='#'>Page</a> :: <a href='#'>Current Page</a>
