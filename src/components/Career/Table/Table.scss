@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   overflow-x: auto;
   max-width: 1000vh;
@@ -7,7 +13,8 @@ table {
   font-size: 16px;
   border-collapse: collapse;
   border: none;
-  width: 1150px;
+  // width: 1500px;
+  width: 100%;
   overflow-x: scroll;
   //   table-layout: fixed;
   thead {
@@ -21,9 +28,8 @@ table {
         padding: 5px 20px;
         width: calc(50% / 3);
         &:nth-child(1) {
-          width: 35%;
+          min-width: 300px;
         }
-
       }
     }
   }
@@ -36,13 +42,48 @@ table {
         width: calc(50% / 3);
         padding: 5px 20px;
         &:nth-child(1) {
-          width: 35%;
+          min-width: 300px;
           text-align: start;
         }
       }
     }
     &:nth-child(2n) {
       background-color: #bababe;
+    }
+  }
+}
+
+@media (max-width: 1242px) {
+  table {
+    thead {
+      tr {
+        th {
+          min-width: 200px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          min-width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  table {
+    width: 800px;
+    tbody {
+      tr {
+        td {
+          padding: 5px;
+          &:nth-child(1) {
+            width: 250px;
+          }
+        }
+      }
     }
   }
 }
