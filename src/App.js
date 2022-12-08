@@ -13,7 +13,7 @@ function App() {
         <Navbar />
       </header>
 
-      <CareerPage />
+      {/* <CareerPage /> */}
 
       <main>
         <Routes>
