@@ -13,13 +13,13 @@ function App() {
         <Navbar />
       </header>
 
-      <CareerPage />
 
       <main>
         <Routes>
           <Route path="/" />
           <Route path="/faq" element={<Faq />} />
           <Route path="/apply" element={<Apply />} />
+          <Route path="/career-center" element={<CareerPage />} />
         </Routes>
       </main>
       <Footer />
