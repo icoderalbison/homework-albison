@@ -32,37 +32,39 @@ const Layout = (props) => {
 
   return (
     <div>
-      <header className={`header ${image}`}>
+      <div className="container">
+        <header className={`header ${image}`}>
 
-        <div className="link"><Title titleUpLink={header_title.link}/></div>
-        <Title title={header_title.title}/>
-        <div className="line"> <Stick color={header_title.line} /></div>
-        
-        
-        <h1></h1>
+          <div className="link"><Title titleUpLink={header_title.link}/></div>
+          <Title title={header_title.title}/>
+          <div className="line"> <Stick color={header_title.line} /></div>
 
-          <Link to="studentCounsil.js">
-            <button className='StudentCounsil__btn' onClick={(e)=> imageChange1(e)}>{btn1.buttonName}</button>
-          </Link>
-          <Link to="Clubs.js">
-            <button className='Clubs__btn' onClick={(e)=> imageChange2(e)}>{btn2.buttonName}</button>
-          </Link>
-          <Link to="AcademicCalendar.js">
-            <button className='AcademicCalendar__btn' onClick={(e)=> imageChange3(e)}>{btn3.buttonName}</button>
-          </Link>
 
-      </header>
+          <h1></h1>
 
-      <div className="layoutPart">
-          <Routes>
-            <Route path="StudentCounsil.js" element={<StudentCounsil/>} />
-            <Route path="Clubs.js" element={<Clubs/>} />
-            <Route path="AcademicCalendar.js" element={<AcademicCalendar/>} />
-            <Route  path='/Section1' element={<Section1/>} />
-            <Route  path='/Section2' element={<Section2/>}/>
-            <Route  path='/Section3' element={<Section3/>}/>
-            <Route  path='/Section4' element={<Section4/>}/>
-          </Routes>
+            <Link to="studentCounsil.js">
+              <button className='StudentCounsil__btn' onClick={(e)=> imageChange1(e)}>{btn1.buttonName}</button>
+            </Link>
+            <Link to="Clubs.js">
+              <button className='Clubs__btn' onClick={(e)=> imageChange2(e)}>{btn2.buttonName}</button>
+            </Link>
+            <Link to="AcademicCalendar.js">
+              <button className='AcademicCalendar__btn' onClick={(e)=> imageChange3(e)}>{btn3.buttonName}</button>
+            </Link>
+
+          </header>
+
+          <div className="layoutPart">
+            <Routes>
+              <Route path="StudentCounsil.js" element={<StudentCounsil/>} />
+              <Route path="Clubs.js" element={<Clubs/>} />
+              <Route path="AcademicCalendar.js" element={<AcademicCalendar/>} />
+              <Route  path='/Section1' element={<Section1/>} />
+              <Route  path='/Section2' element={<Section2/>}/>
+              <Route  path='/Section3' element={<Section3/>}/>
+              <Route  path='/Section4' element={<Section4/>}/>
+            </Routes>
+          </div>
       </div>
 
     </div>
