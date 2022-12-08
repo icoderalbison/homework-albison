@@ -80,6 +80,12 @@
   // margin: 0 auto;
   // width: 1150px;
   width: 100%;
+  padding: 1rem;
+  div{
+    &:nth-child(2n) {
+      background-color: #F4F4F8;
+    }
+  }
 }
 .block {
   display: block;
