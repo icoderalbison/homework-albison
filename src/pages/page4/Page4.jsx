@@ -6,7 +6,7 @@ import rasm from "../../components/facts/facts1.png";
 import rasm2 from "../../components/facts/facts2.png";
 import rasm3 from "../../components/facts/facts3.png";
 import Title from "../../components/title/Title";
-import "../page4/Page4.scss";
+import "./page4.scss";
 import AmityInputs from "../../components/InputsButtons/AmityInputs";
 import Button from "../../components/InputsButtons/Button";
 import Select from "../../components/InputsButtons/Select";

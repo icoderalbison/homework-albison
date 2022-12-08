@@ -1,0 +1,38 @@
+[
+    {
+        "img" : "image1.png",
+        "img2" : "image2.png",
+        "img3" : "image3.png",
+        "title": "StudentCounsil",
+        "sec1": "Section1",
+        "sec2": "Section2",
+        "sec3": "Section3",
+        "sec4": "Section4",
+        "text1": " Lorem loren10 ipsum dolor sit amet consectetur adipisicing elit. Nisi enim aliquid quas quos fugit dignissimos iusto asperiores non esse quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis nemo alias eum fugit. Culpa, voluptatibus reiciendis perspiciatis quod, nostrum sequi laudantium eius dicta enim recusandae quisquam vero, eos tenetur. Ea dolorem sapiente velit, doloremque ex repudiandae! Dolorem, commodi aspernatur.",
+        "text2": "-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus recusandae ex ipsa nesciunt error adipisci, modi necessitatibus sed praesentium sit cum consequuntur ad quae perspiciatis eligendi possimus tenetur. Autem, voluptatibus!"
+    },
+    {
+        "img" : "image4.jpg",
+        "img2" : "image5.png",
+        "img3" : "image3.png",
+        "title": "StudentCounsil",
+        "sec1": "Section1",
+        "sec2": "Section2",
+        "sec3": "Section3",
+        "sec4": "Section4",
+        "text1": " StudentCounsil Lorem loren10 ipsum dolor sit amet consectetur adipisicing elit. Nisi enim aliquid quas quos fugit dignissimos iusto asperiores non esse quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis nemo alias eum fugit. Culpa, voluptatibus reiciendis perspiciatis quod, nostrum sequi laudantium eius dicta enim recusandae quisquam vero, eos tenetur.  Doloribus recusandae ex ipsa nesciunt error adipisci, modi necessitatibus sed praesentium sit cum consequuntur ad quae perspiciatis eligendi possimus tenetur. Autem, voluptatibus! Ea dolorem sapiente velit, doloremque ex repudiandae! Dolorem, commodi aspernatur.",
+        "text2": " StudentCounsil 222222 -Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        "img2" : "image3.png",
+        "img3" : "image4.jpg",
+        "img" : "image5.png",
+        "title": "Academic Calendar",
+        "sec1": "Section1",
+        "sec2": "Section2",
+        "sec3": "Section3",
+        "sec4": "Section4",
+        "text2": " StudentCounsil Lorem loren10 ipsum dolor sit amet consectetur adipisicing elit. Nisi enim aliquid quas quos fugit dignissimos iusto asperiores non esse quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis nemo alias eum fugit. Culpa, voluptatibus reiciendis perspiciatis quod, nostrum sequi laudantium eius dicta enim recusandae quisquam vero, eos tenetur.  Doloribus recusandae ex ipsa nesciunt error adipisci, modi necessitatibus sed praesentium sit cum consequuntur ad quae perspiciatis eligendi possimus tenetur. Autem, voluptatibus! Ea dolorem sapiente velit, doloremque ex repudiandae! Dolorem, commodi aspernatur.",
+        "text1": " StudentCounsil 222222 -Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    }
+]

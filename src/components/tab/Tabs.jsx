@@ -1,12 +1,14 @@
 import React, { useState, useRef } from "react";
 import CareerData from "../Career/CareerData";
 import CareerRow from "../Career/Table/Table";
-import TableButton from "../Career/Table/tableButton/tableButton";
 import styles from "./tabs.module.scss";
 
 //  1ta props oladi
 
 // chaqirganda tabsType1 || tabsType2 dan data chaqarib olib propsda spread qilib yubrish kerak
+
+// type1 => 2ta button
+// type2 => 4ta button
 
 //  exp:
 //     import data1 from './tabsType1.json'
