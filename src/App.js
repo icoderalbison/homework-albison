@@ -14,14 +14,12 @@ function App() {
         <Navbar />
       </header>
    
-      <StudentPage/>
       <main>
         <Routes>
           <Route path="/" />
           <Route path="/faq" element={<Faq />} />
           <Route path="/apply" element={<Apply />} />
           <Route path="/career-center" element={<CareerPage />} />
-          <Route path="/StudentPage" element={<StudentPage/>} />
           
         </Routes>
       </main>
