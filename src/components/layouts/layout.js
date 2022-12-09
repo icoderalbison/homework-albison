@@ -32,8 +32,7 @@ const Layout = (props) => {
 
   return (
     <div>
-      <div className="container">
-        <header className={`header ${image}`}>
+        <header className={`headerLayout ${image}`}>
 
           <div className="link"><Title titleUpLink={header_title.link}/></div>
           <Title title={header_title.title}/>
@@ -42,7 +41,7 @@ const Layout = (props) => {
 
           <h1></h1>
 
-            <Link to="studentCounsil.js">
+            <Link to="../layouts/studentCounsil">
               <button className='StudentCounsil__btn' onClick={(e)=> imageChange1(e)}>{btn1.buttonName}</button>
             </Link>
             <Link to="Clubs.js">
@@ -56,17 +55,16 @@ const Layout = (props) => {
 
           <div className="layoutPart">
             <Routes>
-              <Route path="StudentCounsil.js" element={<StudentCounsil/>} />
-              <Route path="Clubs.js" element={<Clubs/>} />
-              <Route path="AcademicCalendar.js" element={<AcademicCalendar/>} />
+              <Route path="../layouts/studentCounsil" element={<StudentCounsil/>} />
+              <Route path="/Clubs" element={<Clubs/>} />
+              <Route path="/AcademicCalendar" element={<AcademicCalendar/>} />
+              
               <Route  path='/Section1' element={<Section1/>} />
               <Route  path='/Section2' element={<Section2/>}/>
               <Route  path='/Section3' element={<Section3/>}/>
               <Route  path='/Section4' element={<Section4/>}/>
             </Routes>
           </div>
-      </div>
-
     </div>
   );
 };

@@ -4,7 +4,9 @@ import Layout from '../../components/layouts/Layout'
 function StudentPage() {
   return (
     <div>
-        <Layout />
+        <div className="container">
+          <Layout />
+        </div>
     </div>
   )
 }
