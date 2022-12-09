@@ -1,6 +1,24 @@
 import React from 'react'
 import Layout from '../../components/layouts/Layout'
 
+
+const StudentPage = (props) => {
+
+  const[btn1, btn2, btn3] = Buttons;
+  const[header_title] = HeaderData;
+
+  const [image, setImage] = useState("headerImage")
+
+  const imageChange1 = () => {
+    setImage("headerImage")
+  }
+  const imageChange2 = () => {
+    setImage("headerImage2")
+  }
+  const imageChange3 = () => {
+    setImage("headerImage3")
+  }
+
   return (
     <div>
         <div className={`headerLayout ${image}`}>
