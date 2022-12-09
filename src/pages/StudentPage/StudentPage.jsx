@@ -1,5 +1,17 @@
-import React from 'react'
-import Layout from '../../components/layouts/Layout'
+import React, { useState } from 'react'
+import { Link, Route, Routes } from 'react-router-dom';
+import "./Layout.scss"
+import Buttons from '../../components/layouts/buttonsData.json';
+import HeaderData from "../../components/layouts/headerdData.json"
+import Title from '../../components/title/Title';
+import Stick from '../../components/title/Stick';
+import StudentCounsil from '../../components/layouts/StudentCounsil';
+import Clubs from '../../components/layouts/Clubs';
+import AcademicCalendar from '../../components/layouts/AcademicCalendar';
+import Section1 from '../../components/layouts/Sections/Section1';
+import Section2 from '../../components/layouts/Sections/Section2';
+import Section3 from '../../components/layouts/Sections/Section3';
+import Section4 from '../../components/layouts/Sections/Section4';
 
 
 const StudentPage = (props) => {

@@ -11,6 +11,7 @@ function StudentCounsil() {
   return (
     <div>
       <div className="pagecha">
+
         <div className="slidePart">
           <div className="slider">
               <div class="swiper-wrapper">
@@ -46,7 +47,9 @@ function StudentCounsil() {
             <Link to="/Section3" ><li><span>|</span>{data.sec3}</li></Link>
             <Link to="/Section4" ><li><span>|</span>{data.sec4}</li></Link>
           </ul>
+          
         </div>
+
       </div>
 
     </div>
