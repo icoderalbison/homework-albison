@@ -7,7 +7,7 @@ const StudentPage = (props) => {
   const[btn1, btn2, btn3] = Buttons;
   const[header_title] = HeaderData;
 
-  const [image, setImage] = useState("headerImage")
+  const [image, setImage] = useState("headerImage");
 
   const imageChange1 = () => {
     setImage("headerImage")
