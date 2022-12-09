@@ -3,7 +3,7 @@ import Layout from '../../components/layouts/Layout'
 
   return (
     <div>
-        <header className={`headerLayout ${image}`}>
+        <div className={`headerLayout ${image}`}>
 
           <div className="link"><Title titleUpLink={header_title.link}/></div>
           <div className="StudentTitle"><Title title={header_title.title}/></div>
@@ -19,7 +19,7 @@ import Layout from '../../components/layouts/Layout'
               <button className='AcademicCalendar__btn' onClick={(e)=> imageChange3(e)}>{btn3.buttonName}</button>
             </Link>
 
-        </header>
+        </div>
 
         <div className="layoutPart">
             <Routes>
