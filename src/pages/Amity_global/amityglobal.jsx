@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 const amityglobal = () => {
   return (
     <div className='amityGlobal'>
+        <div className="container">
         <div className='heading'>
             <div className="heading__link">
                 
@@ -31,6 +32,7 @@ const amityglobal = () => {
                 })
             }
 
+        </div>
         </div>
       
     </div>

@@ -5,25 +5,26 @@ import Faq from "./pages/faq/Faq";
 import Apply from "./pages/page4/Page4";
 import { Routes, Route } from "react-router-dom";
 import CareerPage from "./pages/careerPage/CareerPage";
-
+import StudentPage from './pages/StudentPage/StudentPage'
+import Amityglobal from "./pages/Amity_global/amityglobal";
 function App() {
   return (
     <div className="">
       <header>
         <Navbar />
       </header>
-
-
+   
       <main>
         <Routes>
           <Route path="/" />
           <Route path="/faq" element={<Faq />} />
           <Route path="/apply" element={<Apply />} />
           <Route path="/career-center" element={<CareerPage />} />
+          <Route path="/student-life" element={<StudentPage />} />
+          <Route path="/amity-global" element={ <Amityglobal/>} />
           
         </Routes>
       </main>
-      <Amityglobal/>
       <Footer />
     </div>
   );
