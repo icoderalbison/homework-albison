@@ -5,10 +5,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import StudentData from './StudentData.json';
 
 function AcademicCalendar() {
-    const[data, data2, data3] = StudentData;
+
+  const[data, data2, data3] = StudentData;
 
   return (
     <div>
+      <h1>AcademicCalendar</h1>
         <div className="pagecha">
           <div className="slidePart">
               <div className="slider">
@@ -16,8 +18,8 @@ function AcademicCalendar() {
                     <Swiper className='slide'
                       spaceBetween={50}
                       slidesPerView={1}
-                      // onSlideChange={() => console.log('slide change')}
-                      // onSwiper={(swiper) => console.log(swiper)}
+                      onSlideChange={() => console.log('slide change')}
+                      onSwiper={(swiper) => console.log(swiper)}
                     >
                       <SwiperSlide className='slide'>
                         <img src={ `assets/media/layoutImages/${data3.img}`} alt="" />
@@ -31,9 +33,9 @@ function AcademicCalendar() {
                     </Swiper>
                 </div>
               </div>
-            <h1>{data3.title}</h1>
-            <p>{data3.text2}</p>
-            <p>{data3.text1}</p>
+            <h1>{data3.title}</h1>            <h1>AcademicCalendar</h1>
+            <p>{data3.text2}</p>            <p>AcademicCalendar</p>
+            <p>{data3.text1}</p>            <p>{data3.text1}</p>
           </div>
 
           <div className="navbar">
@@ -45,6 +47,7 @@ function AcademicCalendar() {
             </ul>
           </div>
         </div>
+        
     </div>
   )
 }

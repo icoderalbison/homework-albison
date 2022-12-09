@@ -10,6 +10,7 @@ function Clubs() {
 
   return (
     <div>
+      <h1>Clubs</h1>
         <div className="pagecha">
             <div className="slidePart">
             <div className="slider">
@@ -19,8 +20,8 @@ function Clubs() {
                     <Swiper className='slide'
                       spaceBetween={50}
                       slidesPerView={1}
-                      // onSlideChange={() => console.log('slide change')}
-                      // onSwiper={(swiper) => console.log(swiper)}
+                      onSlideChange={() => console.log('slide change')}
+                      onSwiper={(swiper) => console.log(swiper)}
                     >
                       <SwiperSlide className='slide'>
                         <img src={ `assets/media/layoutImages/${data2.img}`} alt="" />

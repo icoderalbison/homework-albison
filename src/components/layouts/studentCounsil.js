@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import StudentData from './StudentData.json' 
  
- function studentCounsil() {
+function StudentCounsil() {
 
   const[data, data2] = StudentData;
 
@@ -34,13 +34,9 @@ import StudentData from './StudentData.json'
           </div>
 
           <h1>{data.title}</h1>
-          <p>
-           {data.text1}
-          </p>
+          <p>{data.text1}</p>
           <h4>Lorem ipsum, dolor sit amet </h4>
-          <p>
-            {data.text2}
-          </p>
+          <p>{data.text2}</p>
         </div>
 
         <div className="navbar">
@@ -53,13 +49,7 @@ import StudentData from './StudentData.json'
         </div>
       </div>
 
-      <div className="sections">
-      <Routes>
-        
-      </Routes>
-      </div>
-
     </div>
   )
 }
-export default studentCounsil
+export default StudentCounsil
