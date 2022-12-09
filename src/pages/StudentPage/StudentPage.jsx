@@ -1,35 +1,5 @@
-import React, { useState } from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
-import './Layout.scss'
-import Clubs            from "../../components/layouts/Clubs";
-import StudentCounsil   from "../../components/layouts/StudentCounsil";
-import AcademicCalendar from "../../components/layouts/AcademicCalendar";
-import HeaderData from "./headerdData.json"
-import Section1 from '../../components/layouts/Sections/Section1';
-import Section2 from '../../components/layouts/Sections/Section2';
-import Section3 from '../../components/layouts/Sections/Section3';
-import Section4 from '../../components/layouts/Sections/Section4';
-import Buttons from './buttonsData.json'
-import Title from '../../components/title/Title';
-import Stick from "../../components/title/Stick"
-
-const StudentPage = (props) => {
-
-  const[btn1, btn2, btn3] = Buttons;
-  const[header_title] = HeaderData;
-  console.log(header_title.title);
-
-  const [image, setImage] = useState("headerImage")
-
-  const imageChange1 = () => {
-    setImage("headerImage")
-  }
-  const imageChange2 = () => {
-    setImage("headerImage2")
-  }
-  const imageChange3 = () => {
-    setImage("headerImage3")
-  }
+import React from 'react'
+import Layout from '../../components/layouts/Layout'
 
   return (
     <div>
