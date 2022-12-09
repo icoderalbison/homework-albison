@@ -5,8 +5,6 @@ import Faq from "./pages/faq/Faq";
 import Apply from "./pages/page4/Page4";
 import { Routes, Route } from "react-router-dom";
 import CareerPage from "./pages/careerPage/CareerPage";
-import StudentPage from "./pages/StudentPage/StudentPage";
-import Layout from "./components/layouts/Layout";
 
 function App() {
   return (
@@ -25,6 +23,7 @@ function App() {
           
         </Routes>
       </main>
+      <Amityglobal/>
       <Footer />
     </div>
   );

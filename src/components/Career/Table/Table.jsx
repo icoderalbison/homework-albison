@@ -6,7 +6,7 @@ import "./Table.scss";
 const CareerRow = (props) => {
   return (
     <div className="">
-      <table border={1}>
+      <table>
         {props.head ? (
           <thead>
             <tr>

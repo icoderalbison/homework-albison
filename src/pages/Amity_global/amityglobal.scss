@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:  #002B49;
+
+
+}
+
+.amityGlobal {
+   
+    width: 90%;
+
+    margin: 0 auto;
+    justify-content: center;
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 25px 0;
+
+        &__text {
+            color: white;
+            font-family: 'Cormorant';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 50px;
+            /* identical to box height, or 104% */
+
+            text-align: center;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                margin: 15px 0;
+            }
+        }
+
+    }
+
+    &__cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      
+
+        .cardGlobal {
+            width: 24%;
+
+
+        }
+    }
+}
+
+@media(max-width:900px){
+    .amityGlobal__cards{
+        flex-wrap: wrap;
+    }
+    .cardGlobal{
+        width: 49% !important;
+    }
+}
+@media(max-width:610px){
+    .heading__text{
+        h2{
+            font-size: 45px;
+        }
+    }
+    .amityGlobal__cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cardGlobal{
+        width: 80% !important;
+    }
+}

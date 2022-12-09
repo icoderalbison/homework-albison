@@ -68,11 +68,12 @@
     color: #59595c;
   }
 }
-.careerDiv{
+.careerDiv {
   display: flex;
   overflow-x: scroll;
   width: 100%;
-  &::-webkit-scrollbar{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  &::-webkit-scrollbar {
     width: 0;
   }
 }
@@ -80,6 +81,14 @@
   // margin: 0 auto;
   // width: 1150px;
   width: 100%;
+  padding: 1rem;
+  div {
+    &:nth-child(2n) {
+      table {
+        background-color: #F4F4F8;
+      }
+    }
+  }
 }
 .block {
   display: block;
