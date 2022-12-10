@@ -75,7 +75,7 @@ const Prices = () => {
       <div className="price__banner">
         <Cards
           BigTitle="Услуги доставки из Великобритании"
-          imgleft="./assets/images/page4/illustration.png"
+          imgleft="./assets/images/page4/Illustration.png"
           Inp={true}
           button="Отправить"
           text2="Нажимая на кнопку вы подтверждаете согласие с правилами предоставления услуги и политикой конфиденциальности"
