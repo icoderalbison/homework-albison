@@ -55,8 +55,10 @@ const Navbar = () => {
         <div className="container">
           <div className={`${style.sidebar} `} >
             <div className={style.search}>
-              <AmityInputs
+             <form>
+             <AmityInputs
                placeholder={'Search...'} type="text" borderRadius="100%" bg="white" none={'none'}/>
+             </form>
             </div>
             <div className={style.responsive_navbar}>
               <ul>

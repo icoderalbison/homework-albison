@@ -5,7 +5,7 @@ import Buttons from '../../components/layouts/buttonsData.json';
 import HeaderData from "../../components/layouts/headerdData.json"
 import Title from '../../components/title/Title';
 import Stick from '../../components/title/Stick';
-import StudentCounsil from '../../components/layouts/StudentCounsil';
+import StudentCounsil from '../../components/layouts/studentCounsil';
 import Clubs from '../../components/layouts/Clubs';
 import AcademicCalendar from '../../components/layouts/AcademicCalendar';
 import Section1 from '../../components/layouts/Sections/Section1';

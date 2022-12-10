@@ -99,17 +99,17 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link>
+                    <Link to={'amity-global'}>
                     Amity Global
                     </Link>
                   </li>
                   <li>
-                    <Link>
+                    <Link to={'student-life'}>
                     Students Life
                     </Link>
                   </li>
                   <li>
-                    <Link>
+                    <Link to="/career-center">
                     Career Centre 
                     </Link>
                   </li>
